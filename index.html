@@ -5,15 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera página web</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        header {
+            display: flex;
+        }
+
+        nav {
+            /* Las medidas de width pueden ser:
+                en pixeles: 100px
+                en porcentajes: 100%
+                con relacion al tamaño de la pantalla: 100vh */
+            width: 100%;
+        }
+
+        ul {
+            /* Esta propiedad modifica el adorno del lado izquierdo de las listas.
+            Si ponemos como valor none, obligaremos a la lista a no tener adornos*/
+            list-style: none;
+
+            /* Estas dos propiedades serán explicadas más adelante */
+            display: flex; 
+            flex-direction: row;
+
+            /* Le indicamos que se posicione a la derecha, equivalente al alinear
+            a la derecha de Microsoft Word o similares: ; */
+            float: right;
+        } 
+
+        a {
+            color: white;
+            /* Modificamos el decorado de un texto, si tiene el valor none, le estamos
+            indicando que no tendra decoraciones */
+            text-decoration: none;
+            /* Le agregamos un margen a la izquierda de 10 pixeles */
+            margin-left: 10px;
+        }
+    </style>
 </head>
-<body style="background-color: red; color: white">
+<body>
     <!-- La etiqueta header será la cabecera visual de nuestro sitio web. -->
     <header>
         <!-- La etiqueta img tiene como funcionalidad representar imagenes. -->
         <img 
             src="https://upload.wikimedia.org/wikipedia/commons/6/66/Godzilla_%282014%29_-_Logo.svg" 
-            alt="Logo de Godzilla"
-            style="width: 200px;">
+            alt="Logo de Godzilla">
         <nav>
             <!-- UL significa Unordered List (lista desordenada) -->
             <ul>
