@@ -1,6 +1,19 @@
+@font-face {
+    /* font-family es la propiedad que le asigna un nombre a la nueva fuente.
+       El nombre es a gusto de cada quien. Por convencion, se pone el nombre
+       real, en este caso, Roboto.
+    */
+    font-family: Roboto;
+    /* La propiedad src define la ubicacion de la fuente a utilizar. Sea
+       cual sea que utilices, prueba primero el archivo que tenga en su
+       nombre Regular */
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
 body {
     background-color: black;
     color: white;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 img {
