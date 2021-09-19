@@ -68,8 +68,8 @@ a {
 
 article {
     text-align: center;
-    margin: 32px auto;
-    width: 80%;
+    /* margin: 32px auto; */
+    /* width: 80%; */
 }
 
 .column img {
@@ -93,4 +93,38 @@ article {
 
 footer {
     text-align: center;
+}
+
+div#slider {
+    background-image: url('../images/gojira54.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 160px);
+    animation: changegojira 5s infinite;
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes changegojira {
+    0% {
+        background-image: url('../images/gojira54.png');
+    }
+
+    25% {
+        background-image: url('../images/gojiraHeisei.png');
+    }
+
+    50% {
+        background-image: url('../images/gojirafinal.png');
+    }
+
+    75% {
+        background-image: url('../images/legendarygojira.png');
+    }
+
+    100% {
+        background-image: url('../images/shingojira.png');
+    }
 }
